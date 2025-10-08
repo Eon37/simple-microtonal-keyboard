@@ -1,0 +1,203 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+  background: #222;
+  color: #eee;
+}
+
+#keyboard {
+  position: relative;
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.white-keys {
+  display: flex;
+}
+
+.key {
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.05s;
+}
+
+.key.white {
+  width: 50px;
+  height: 200px;
+  background: white;
+  z-index: 1;
+}
+
+.key.black {
+  width: 35px;
+  height: 120px;
+  background: black;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  border: 1px solid #111;
+}
+
+.key.active {
+  background: #88f;
+}
+
+.key.black.active {
+  background: #55f;
+}
+
+.note-label {
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+
+#controls {
+  margin-bottom: 1rem;
+}
+
+select {
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #111;
+  color: #eee;
+}
+
+#keyboard {
+  position: relative;
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.white-keys {
+  display: flex;
+}
+
+.key.white { width: 50px; height: 200px; background: white; }
+.key.black { width: 35px; height: 120px; position: absolute; top: 0; background: black; }
+.note-label { position: absolute; bottom: 4px; width: 100%; text-align: center; font-size: 0.75rem; }
+
+
+    body {
+      background: #222;
+      color: #ddd;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    #controls {
+      margin: 1rem;
+    }
+
+    #keyboard {
+      position: relative;
+      height: 200px;
+      margin: 0 auto;
+      background: #111;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+     .white-keys {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Black keys layer stacked on top */
+      .black-keys {
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute; /* This is key */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        z-index: 2;
+      }
+
+    /* --- WHITE KEYS --- */
+    .white {
+      width: 50px;
+      height: 200px;
+      background: white;
+      border: 1px solid #333;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-size: 10px;
+      color: #333;
+    }
+
+    /* --- BLACK SLOTS --- */
+    .black-slot {
+      position: relative;
+      width: 25px;
+      height: 130px;
+      top: 0;
+      z-index: 3;
+      border-radius: 0 0 3px 3px;
+      /* overflow: hidden; */
+    }
+
+    .slice {
+        position: relative;
+      flex: 1;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.2s, background 0.2s;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      z-index: 4;
+    }
+
+    /* --- TEMPERAMENT STYLES --- */
+
+    /* 12-TET: show only 1 slice */
+    .tet12 .s0 {
+      height: 120px;
+      opacity: 0;
+    }
+
+    .tet12 .s1 {
+      height: 120px;
+      background: black;
+      opacity: 1;
+    }
+
+    /* 19-TET: 2 slices */
+    .tet19 .s0 {
+      height: 120px;
+      background: black;
+      opacity: 1;
+    }
+
+    .tet19 .s1 {
+      height: 60px;
+      background: gray;
+      opacity: 1;
+    }
+    .tet19 .s2 {
+      height: 60px;
+      background: black;
+      opacity: 1;
+    }
+
+    /* 31-TET: 4 slices */
+    .tet31 .s0 { height: 60px; background: gray; opacity: 1;}
+    .tet31 .s01 { height: 60px; background: black; opacity: 1;}
+    .tet31 .s1 { height: 30px; background: gray; opacity: 1; }
+    .tet31 .s2 { height: 30px; background: black; opacity: 1; }
+    .tet31 .s3 { height: 30px; background: gray; opacity: 1; }
+    .tet31 .s4 { height: 30px; background: black; opacity: 1; }
+

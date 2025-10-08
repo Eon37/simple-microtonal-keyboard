@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microtonal Keyboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/tone@latest"></script>
+  <script src="script.js"></script> -->
+</head>
+<body>
+  <div id="controls">
+    <label for="tetSelect">Temperament:</label>
+    <select id="tuning">
+      <option value="12">12-TET</option>
+      <option value="19">19-TET</option>
+      <option value="31">31-TET</option>
+    </select>
+  </div>
+
+  <div id="keyboard" class="tet12">
+    <!-- White keys -->
+    <!-- Octave 2 -->
+     <div class="white-keys">
+    <div class="white"><div class="note-label">C2</div></div>
+    <div class="white"><div class="note-label">D2</div></div>
+    <div class="white"><div class="note-label">E2</div></div>
+    <div class="white"><div class="note-label">F2</div></div>
+    <div class="white"><div class="note-label">G2</div></div>
+    <div class="white"><div class="note-label">A2</div></div>
+    <div class="white"><div class="note-label">B2</div></div>
+
+    <!-- Octave 3 -->
+    <div class="white"><div class="note-label">C3</div></div>
+    <div class="white"><div class="note-label">D3</div></div>
+    <div class="white"><div class="note-label">E3</div></div>
+    <div class="white"><div class="note-label">F3</div></div>
+    <div class="white"><div class="note-label">G3</div></div>  
+    <div class="white"><div class="note-label">A3</div></div>
+    <div class="white"><div class="note-label">B3</div></div>
+
+    <!-- Octave 4 -->
+    <div class="white"><div class="note-label">C4</div></div>
+    <div class="white"><div class="note-label">D4</div></div>
+    <div class="white"><div class="note-label">E4</div></div>
+    <div class="white"><div class="note-label">F4</div></div>
+    <div class="white"><div class="note-label">G4</div></div>
+    <div class="white"><div class="note-label">A4</div></div>
+    <div class="white"><div class="note-label">B4</div></div>
+
+    <!-- Octave 5 -->
+    <div class="white"><div class="note-label">C5</div></div>
+    <div class="white"><div class="note-label">D5</div></div>
+    <div class="white"><div class="note-label">E5</div></div>
+    <div class="white"><div class="note-label">F5</div></div>
+    <div class="white"><div class="note-label">G5</div></div>
+    <div class="white"><div class="note-label">A5</div></div>
+    <div class="white"><div class="note-label">B5</div></div>
+
+    <!-- extra top C -->
+    <div class="white"><div class="note-label">C6</div></div>
+</div>
+
+<div class="black-keys">
+    <!-- Black key slots -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- C# -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- D# -->
+
+    <div class="black-slot"><div class="slice s0"></div><div class="slice s01"></div></div>
+
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- F# -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- G# -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- A# -->
+    
+    <div class="black-slot"><div class="slice s0"></div><div class="slice s01"></div></div>
+
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- C#3 -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- D#3 -->
+
+    <div class="black-slot"><div class="slice s0"></div><div class="slice s01"></div></div>
+
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- F#3 -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- G#3 -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- A#3 -->
+
+    <div class="black-slot"><div class="slice s0"></div><div class="slice s01"></div></div>
+
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- C#4 -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- D#4 -->
+
+    <div class="black-slot"><div class="slice s0"></div><div class="slice s01"></div></div>
+
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- F#4 -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- G#4 -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- A#4 -->
+
+    <div class="black-slot"><div class="slice s0"></div><div class="slice s01"></div></div>
+
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- C#5 -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- D#5 -->
+
+    <div class="black-slot"><div class="slice s0"></div><div class="slice s01"></div></div>
+
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- F#5 -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- G#5 -->
+    <div class="black-slot"><div class="slice s1"></div><div class="slice s2"></div><div class="slice s3"></div><div class="slice s4"></div></div> <!-- A#5 -->
+
+    <div class="black-slot"><div class="slice s0"></div><div class="slice s01"></div></div>
+    </div>
+  </div>
+    <!-- Load Tone.js FIRST -->
+  <script src="https://cdn.jsdelivr.net/npm/tone@14.8.49/build/Tone.js"></script>
+
+  <!-- Load your script AFTER -->
+  <script src="script.js"></script>
+</body>
+</html>
